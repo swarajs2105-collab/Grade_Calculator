@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="student" style="display: flex; flex-direction: row; justify-content: center;">
+            <h1 style="text-align: center;">🎓 Student Grade Calculator</h1>
+
+
+    <button id="studentDetail" style="height: 40px;
+    margin-left: 300px;
+    ">
+        Team Members
+    </button>
+
+<!-- Popup -->
+<div id="popup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close">&times;</span>
+
+        <h2>Team Members</h2>
+
+        <ul>
+            <li>Swaraj Shrivastav</li>
+            <li>Priyanshu Raj</li>
+            <li>Moinuddin </li>
+            <li>Ritik </li>
+            <li>Purab Jain</li>
+            <li>Aditya Kumar</li>
+        </ul>
+
+    </div>
+
+</div>
+
+        </div>
+
+
+
+
+        <div class="form">
+
+            <input type="text" id="studentName" placeholder="Student Name">
+
+            <input type="number" id="sub1" placeholder="Mathematics">
+
+            <input type="number" id="sub2" placeholder="Science">
+
+            <input type="number" id="sub3" placeholder="English">
+
+            <input type="number" id="sub4" placeholder="Computer">
+
+            <button id="addBtn">
+                <i class="fa-solid fa-plus"></i>
+                Add Student
+            </button>
+
+        </div>
+
+
+
+        <div class="searchBox">
+
+            <input type="text" id="searchInput" placeholder="🔍 Search Student">
+               <button id="exportBtn" onclick="exportCSV()">
+        <i class="fa-solid fa-file-csv"></i> Export CSV
+    </button>
+
+        </div>
+
+
+
+        <div class="stats">
+
+            <div class="card">
+                <h2 id="totalStudents">0</h2>
+                <p>Total Students</p>
+            </div>
+
+            <div class="card">
+                <h2 id="highestMarks">0</h2>
+                <p>Highest Total</p>
+            </div>
+
+            <div class="card">
+                <h2 id="averageMarks">0</h2>
+                <p>Average Total</p>
+            </div>
+
+        </div>
+
+
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Rank</th>
+
+                    <th>Name</th>
+
+                    <th>Maths</th>
+
+                    <th>Science</th>
+
+                    <th>English</th>
+
+                    <th>Computer</th>
+
+                    <th>Total</th>
+
+                    <th>Percentage</th>
+
+                    <th>Grade</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="studentTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
